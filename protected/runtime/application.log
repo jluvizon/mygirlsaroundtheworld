@@ -1,0 +1,277 @@
+2014/02/11 21:23:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 21:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controller/MarkersController.php
+---
+2014/02/11 21:24:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controller/MarkersController.php
+---
+2014/02/11 21:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersControllers.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 21:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersControllers.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+---
+2014/02/11 21:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/MarkersControllers.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controller/Mark...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+---
+2014/02/11 21:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controllers/Mar...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controller/MarkersControllers.php
+---
+2014/02/11 21:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controllers/Mar...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+---
+2014/02/11 21:24:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controllers/Mar...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+---
+2014/02/11 21:24:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controllers/Mar...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+---
+2014/02/11 21:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/MarkersController.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('controllers/Mar...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=controllers/MarkersController.php
+---
+2014/02/11 21:44:31 [error] [php] require_once(/var/www/mygirlsaroundtheworld/protected/controllers/../yii/framework/yii.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php:22)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(286): MarkersController->runAction()
+#2 /var/www/yii/framework/web/CController.php(265): MarkersController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(282): MarkersController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/mygirlsaroundtheworld/index.php(13): CWebApplication->run()
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/printXml
+in /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php (22)
+in /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php (22)
+in /var/www/mygirlsaroundtheworld/index.php (13)
+2014/02/11 22:27:45 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "girlsmap".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('girlsmap', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('girlsmap')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:30:49 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "girlsmap".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('girlsmap', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('girlsmap')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:31:22 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "girlsmap".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('girlsmap', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('girlsmap')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:33:23 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "girlsmap".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('girlsmap', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('girlsmap')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:35:02 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "girlsmap".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('girlsmap', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('girlsmap')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:37:01 [error] [exception.CException] exception 'CException' with message 'MarkersController cannot find the requested view "contact".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('contact', NULL, true)
+#1 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('contact')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
+2014/02/11 22:37:24 [error] [php] Undefined variable: model (/var/www/mygirlsaroundtheworld/protected/views/site/contact.php:38)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): MarkersController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): MarkersController->renderPartial()
+#2 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): MarkersController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): MarkersController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): MarkersController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MarkersController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/mygirlsaroundtheworld/index.php(13): CWebApplication->run()
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+in /var/www/mygirlsaroundtheworld/protected/views/site/contact.php (38)
+in /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php (37)
+in /var/www/mygirlsaroundtheworld/index.php (13)
+2014/02/11 22:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "action".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('action')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('action')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/action')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/action
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+---
+2014/02/11 22:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "action".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('action')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('action')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/action')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/action
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+---
+2014/02/11 22:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "action".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('action')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('action')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/action')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/action
+---
+2014/02/11 23:22:02 [error] [exception.CException] exception 'CException' with message 'Property "MarkersController.name" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/mygirlsaroundtheworld/protected/views/site/girlsmap.php(6): CComponent->__get('name')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/mygirl...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/mygirl...', NULL, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/mygirl...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('/site/girlsmap', NULL, true)
+#5 /var/www/mygirlsaroundtheworld/protected/controllers/MarkersController.php(37): CController->render('/site/girlsmap')
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): MarkersController->actionGoToGirlsMap()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('goToGirlsMap')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('markers/goToGir...')
+#12 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/mygirlsaroundtheworld/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/mygirlsaroundtheworld/index.php?r=markers/goToGirlsMap
+HTTP_REFERER=http://localhost/mygirlsaroundtheworld/index.php
+---
