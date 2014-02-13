@@ -3,6 +3,8 @@
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
 
+/*jajazinho gosta de pintos*/
+
 $this->pageTitle=Yii::app()->name . ' - My Girls';
 $this->breadcrumbs=array(
 	'Contact',
