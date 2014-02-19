@@ -7,6 +7,7 @@ class MarkersController extends Controller
         header("Content-type: text/xml");        
 
         $doc = new DOMDocument('1.0');
+        
         $node = $doc->createElement("markers");
         $parnode = $doc->appendChild($node);
 
@@ -34,7 +35,7 @@ class MarkersController extends Controller
     }
     
     public function actionGoToGirlsMap(){
-        $this->render('/site/girlsmap');
+        $this->render('/pages/main/girlsonmap');
     }
     
 }
