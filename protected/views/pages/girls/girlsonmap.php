@@ -1,4 +1,8 @@
 <?php
+/* @var $this SiteController */
+/* @var $model ContactForm */
+/* @var $form CActiveForm */
+
 
 $this->pageTitle=Yii::app()->name . ' - My Girls';
 $this->breadcrumbs=array(
@@ -84,7 +88,7 @@ $this->breadcrumbs=array(
   </head>
 
   <body onload="load()">
-    <div id="map" style="width: 1000px; height: 600px"></div>
+    <div id="map" style="width: 100%; height: 700px"></div>
   </body>
 
 </html>

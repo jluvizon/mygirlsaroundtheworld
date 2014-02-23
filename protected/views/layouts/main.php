@@ -16,14 +16,14 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
         <!-- Bootstrap -->
         
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-    
-    <?php echo Yii::app()->setLanguage('pt_br'); ?> 
 
+<?php Yii::app()->setLanguage('en_us'); ?>
+    
 <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -35,26 +35,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">My Girls Around The World</a>
+                <?php echo CHtml::link(Yii::t('main','My Girls Around The World'), array('menu/goIndex'), array('class' => 'navbar-brand')); ?>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#about"><?php echo Yii::t('main','Add New Girl') ?></a></li>
-                    <li><?php echo CHtml::link(Yii::t('main','My Girls'),array('markers/goToGirlsMap')); ?></li>
-                    <li class="active"><a href="#"><?php echo Yii::t('main','About') ?></a></li>
+                    <li><?php echo CHtml::link(Yii::t('main','My Girls on Map'),array('menu/goGirlsOnMap')); ?></li>
+                    <li><?php echo CHtml::link(Yii::t('main','My Girls'),array('menu/goListGirls')); ?></li>
+                    <li><?php echo CHtml::link(Yii::t('main','Add New Girl'),array('girl/newGirl')); ?></li>
+                    <li><a href="#"><?php echo Yii::t('main','About') ?></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </div>
 
     <div class="container">
-
+        
         <div class="starter-template">
             <?php echo $content; ?>
         </div>
-       
+            
     </div><!-- /.container -->
-    
-
+  
 </body>
 </html>

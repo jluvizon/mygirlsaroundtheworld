@@ -29,7 +29,7 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('/pages/main/index');
 	}
 
 	/**
@@ -42,7 +42,7 @@ class SiteController extends Controller
 			if(Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
 			else
-				$this->render('error', $error);
+				$this->render('/pages/main/error', $error);
 		}
 	}
 
@@ -95,7 +95,7 @@ class SiteController extends Controller
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		$this->render('/pages/main/login',array('model'=>$model));
 	}
 
 	/**
