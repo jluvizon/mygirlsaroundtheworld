@@ -1,22 +1,26 @@
 <?php
 
 /**
- * This is the model class for table "t001_girl".
+ * This is the model class for table "t002_girl_location".
  *
- * The followings are the available columns in table 't001_girl':
+ * The followings are the available columns in table 't002_girl_location':
+ * @property integer $cd_location
  * @property integer $cd_girl
+ * @property string $name
+ * @property double $latitude
+ * @property double $longitude
  *
  * The followings are the available model relations:
- * @property GirlLocation $girlLocation
+ * @property Girl $girl
  */
-class Girl extends CActiveRecord
+class GirlLocation extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 't001_girl';
+		return 't002_girl_location';
 	}
 
 	/**
@@ -27,9 +31,13 @@ class Girl extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('cd_girl, name, latitude, longitude', 'required'),
+			array('cd_girl', 'numerical', 'integerOnly'=>true),
+			array('latitude, longitude', 'numerical'),
+			array('name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cd_girl', 'safe', 'on'=>'search'),
+			array('cd_location, cd_girl, name, latitude, longitude', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -41,7 +49,7 @@ class Girl extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'girlLocation' => array(self::HAS_ONE, 'GirlLocation', 'cd_girl'),
+			'girl' => array(self::BELONGS_TO, 'Girl', 'cd_girl'),
 		);
 	}
 
@@ -51,7 +59,11 @@ class Girl extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'cd_location' => 'Cd Location',
 			'cd_girl' => 'Cd Girl',
+			'name' => 'Name',
+			'latitude' => 'Latitude',
+			'longitude' => 'Longitude',
 		);
 	}
 
@@ -73,7 +85,11 @@ class Girl extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('cd_location',$this->cd_location);
 		$criteria->compare('cd_girl',$this->cd_girl);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('latitude',$this->latitude);
+		$criteria->compare('longitude',$this->longitude);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -84,7 +100,7 @@ class Girl extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Girl the static model class
+	 * @return GirlLocation the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

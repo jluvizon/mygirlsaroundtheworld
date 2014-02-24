@@ -27,7 +27,7 @@ class GirlController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('newGirl','update'),
+				'actions'=>array('newGirl', 'update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -58,6 +58,7 @@ class GirlController extends Controller
 	public function actionCreate()
 	{
 		$model=new Girl;
+                $model->girlLocation=new GirlLocation();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -65,8 +66,13 @@ class GirlController extends Controller
 		if(isset($_POST['Girl']))
 		{
 			$model->attributes=$_POST['Girl'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->a001_cd_girl));
+			if($model->save()){
+                            $girlLocation=new GirlLocation();
+                            $girlLocation->attributes=$_POST['GirlLocation'];
+                            $girlLocation->cd_girl=$model->cd_girl;
+                            $girlLocation->save();
+                        }
+			$this->redirect(array('view','id'=>$model->cd_girl));
 		}
 
 		$this->render('create',array(
@@ -77,19 +83,25 @@ class GirlController extends Controller
         
         public function actionNewGirl(){
             $model=new Girl;
-                
+            $model->girlLocation=new GirlLocation();
+
             // Uncomment the following line if AJAX validation is needed
             // $this->performAjaxValidation($model);
-                
+
             if(isset($_POST['Girl']))
             {
                     $model->attributes=$_POST['Girl'];
-                    if($model->save())
-                            $this->redirect(array('view','id'=>$model->a001_cd_girl));
+                    if($model->save()){
+                        $girlLocation=new GirlLocation();
+                        $girlLocation->attributes=$_POST['GirlLocation'];
+                        $girlLocation->cd_girl=$model->cd_girl;
+                        $girlLocation->save();
+                    }
+                    $this->redirect(array('/menu/goGirlsOnMap','id'=>$model->cd_girl));
             }
-                
+
             $this->render('/pages/girls/newgirl',array(
-                'model'=>$model,
+                    'model'=>$model,
             ));
         }
         
@@ -110,7 +122,7 @@ class GirlController extends Controller
 		{
 			$model->attributes=$_POST['Girl'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->a001_cd_girl));
+				$this->redirect(array('view','id'=>$model->cd_girl));
 		}
                     
 		$this->render('update',array(
@@ -129,10 +141,36 @@ class GirlController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
-	
-
+            
+        /**
+        * Lists all models.
+        */
+       public function actionIndex()
+       {
+           $dataProvider=new CActiveDataProvider('Girl');
+           $this->render('index',array(
+               'dataProvider'=>$dataProvider,
+           ));
+       }
+           
+       /**
+        * Manages all models.
+        */
+       public function actionAdmin()
+       {
+           $model=new Girl('search');
+           $model->unsetAttributes();  // clear any default values
+           if(isset($_GET['Girl']))
+               $model->attributes=$_GET['Girl'];
+                   
+           $this->render('admin',array(
+               'model'=>$model,
+           ));
+       }
+           
+           
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

@@ -38,7 +38,7 @@ return array(
 		),
 		// uncomment the following to enable URLs in path-format
 		
-                'urlManager'=>array(
+                /*'urlManager'=>array(
                     'class' => 'UrlManager',
                     'urlFormat'=>'path',
                     'showScriptName'=>false,
@@ -49,7 +49,7 @@ return array(
                         '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                         '<controller:[\w\-]+>/<action:[\w\-]+>' => '<controller>/<action>'
                     ),
-                ),
+                ),*/
             
 		// uncomment the following to use a MySQL database
 		

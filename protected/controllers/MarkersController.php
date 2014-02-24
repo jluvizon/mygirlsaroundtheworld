@@ -13,7 +13,7 @@ class MarkersController extends Controller
 
         $connection = Yii::app()->db;
         
-        $query = "SELECT * FROM markers WHERE 1";
+        $query = "SELECT * FROM t002_girl_location WHERE 1";
 
         $command=$connection->createCommand($query);
 
@@ -25,10 +25,8 @@ class MarkersController extends Controller
           $newnode = $parnode->appendChild($node);
 
           $newnode->setAttribute("name", $row['name']);
-          $newnode->setAttribute("address", $row['address']);
-          $newnode->setAttribute("lat", $row['lat']);
-          $newnode->setAttribute("lng", $row['lng']);
-          $newnode->setAttribute("type", $row['type']);
+          $newnode->setAttribute("latitude", $row['latitude']);
+          $newnode->setAttribute("longitude", $row['longitude']);
         }
         $xmlfile = $doc->saveXML();
         echo $xmlfile;      
