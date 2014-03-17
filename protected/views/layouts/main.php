@@ -34,6 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    
                 </button>
                 <?php echo CHtml::link(Yii::t('main','My Girls Around The World'), array('menu/goIndex'), array('class' => 'navbar-brand')); ?>
             </div>
