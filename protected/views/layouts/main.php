@@ -20,6 +20,8 @@
         <!-- Bootstrap -->
         
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        
+        <style>body{padding-top:50px;}</style>
 </head>
 
 <?php Yii::app()->setLanguage('en_us'); ?>
