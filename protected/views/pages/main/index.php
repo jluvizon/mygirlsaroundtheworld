@@ -2,5 +2,8 @@
 /* @var $this SiteController */
 ?>
 
-<h1>Bootstrap starter template</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<?php if (Yii::app()->user->isGuest) { ?>
+<h1><?php echo CHtml::link(Yii::t('main', 'Cadastrar-se'), array('user/create')); ?></h1>
+<?php } else { ?>
+<h1>MY GIRLS AROUND THE WORLD!</h1>
+<?php } ?>
