@@ -9,7 +9,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-<!--<link rel="stylesheet" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/main.css">-->
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/fb.js"></script>
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 <style>body{padding-top:50px;}</style>
 </head>

@@ -69,10 +69,10 @@ class User extends CActiveRecord {
     public function search() {
         // @todo Please modify the following code to remove attributes that should not be searched.
         $criteria=new CDbCriteria;
-        $criteria->compare('a003_id',$this->a003_id);
-        $criteria->compare('a003_username',$this->a003_username,true);
-        $criteria->compare('a003_password',$this->a003_password,true);
-        $criteria->compare('a003_email',$this->a003_email,true);
+        $criteria->compare('a003_id', $this->a003_id);
+        $criteria->compare('a003_username', $this->a003_username, true);
+        $criteria->compare('a003_password', $this->a003_password, true);
+        $criteria->compare('a003_email', $this->a003_email, true);
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,

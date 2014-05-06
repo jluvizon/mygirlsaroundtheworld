@@ -77,16 +77,20 @@ class UserController extends Controller {
                 $model->a003_password = crypt($model->a003_password);
             }
             
-            if ($model->save()) {
-                // TODO: enviar o email com o link para o usuário confirmar que é um email válido. 
-                // TODO: verificar se o login ou email já estão em uso.
-                
-                //$this->redirect(array('view', 'id'=>$model->a003_id));
-                $this->redirect(array('created'));
+            // Verificando se o login ou email já estão em uso.
+            if ($this->checkIfUserExists($model)) {
+                $model->a003_password = "";
             }
             else {
-                // Se deu erro ao salvar (não informou o email, por ex.), apaga a senha.
-                $model->a003_password = "";
+                if ($model->save()) {
+                    // TODO: enviar o email com o link para o usuário confirmar que é um email válido.
+                    //$this->redirect(array('view', 'id'=>$model->a003_id));
+                    $this->redirect(array('created'));
+                }
+                else {
+                    // Se deu erro ao salvar (não informou o email, por ex.), apaga a senha.
+                    $model->a003_password = "";
+                }
             }
         }
 
@@ -144,7 +148,7 @@ class UserController extends Controller {
      */
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('User');
-        $this->render('index',array(
+        $this->render('index', array(
             'dataProvider'=>$dataProvider,
         ));
     }
@@ -159,7 +163,7 @@ class UserController extends Controller {
         if (isset($_GET['User']))
             $model->attributes=$_GET['User'];
 
-        $this->render('admin',array(
+        $this->render('admin', array(
             'model'=>$model,
         ));
     }
@@ -172,11 +176,48 @@ class UserController extends Controller {
      * @throws CHttpException
      */
     public function loadModel($id) {
-        $model=User::model()->findByPk($id);
+        $model = User::model()->findByPk($id);
         
         if ($model===null)
             throw new CHttpException(404, 'The requested page does not exist.');
         return $model;
+    }
+    
+    /**
+     * 
+     * @param type $model
+     * @return boolean
+     */
+    public function checkIfUserExists($model) {
+        if ($this->checkIfUserExistsByUsername($model->a003_username) || $this->checkIfUserExistsByEmail($model->a003_email)) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function checkIfUserExistsByUsername($username) {
+        $modelAux = new User;
+        $modelAux->a003_username = $username;
+        $dataProvider = $modelAux->search();
+        
+        if ($dataProvider->itemCount > 0) {
+            return true;
+        }
+
+        return false;
+    }
+    
+    public function checkIfUserExistsByEmail($email) {
+        $modelAux = new User;
+        $modelAux->a003_email = $email;
+        $dataProvider = $modelAux->search();
+        
+        if ($dataProvider->itemCount > 0) {
+            return true;
+        }
+
+        return false;
     }
 
     /**

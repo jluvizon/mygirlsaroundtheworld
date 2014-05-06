@@ -57,6 +57,52 @@ function onFbloginSuccess() {
         }
     });
 }
+    
+/*
+ //GIRLS ON MAP
+ $(function() {
+  FB.init({
+    appId: "652264771511339",
+    status: true,
+    cookie: true,
+    xfbml: true
+  });
+  FB.getLoginStatus(function(response) {
+    if(response.status === "connected") {
+      fb_authorized = true;
+      fb_uid = response.authResponse.userID;
+      fb_access_token = response.authResponse.accessToken;
+      if(user_logged_in()) {
+        facebook.hide_login_button();
+        user.load_logged_header();
+      } else {
+        facebook.hide_logout_button();
+      }
+    } else {
+      if(user_logged_in()) {
+        facebook.remove_user_cookies();
+        window.location.reload();
+      } else {
+        facebook.remove_user_cookies();
+        facebook.hide_logout_button();
+        user.load_logged_header();
+      }
+    }
+  });
+});
+// Load the SDK Asynchronously
+(function(d) {
+  var js, id = 'facebook-jssdk',
+    ref = d.getElementsByTagName('script')[0];
+  if(d.getElementById(id)) {
+    return;
+  }
+  js = d.createElement('script');
+  js.id = id;
+  js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js";
+  ref.parentNode.insertBefore(js, ref);
+}(document));*/
 </script>
 
 <?php
@@ -106,9 +152,16 @@ $this->breadcrumbs=array(
         <BR /><BR /><BR /><BR />
     </div>
     
-    <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-auto-logout-link="true"></div>
+    <!--<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-auto-logout-link="true"></div>-->
     
-    <!--<div class="fb-login-button" onclick="fbLoginClick();" perms="email">TESTE</div>-->
+    <!--<div class="fb-login-button" onclick="fbLoginClick();" perms="email">TESTE LOGIN</div>-->
+    
+    <!-- GIRLS ON A MAP
+    <a class="btn fb-login" onclick="facebook.login();return false;" href="#" style="display: block;">Login</a>
+    <a title="Sign Out" onclick="javascript:facebook.logout(); return false;" href="#">Sign Out</a>-->
+    
+    <a class="fb-login-button" id="fb-login" onclick="javascript:facebook.login();return false;" href="#">Login</a>
+    <a class="fb-login-button" onclick="javascript:facebook.logout();return false;" href="#">Logout</a>
 
     <?php $this->endWidget(); ?>
 </div>

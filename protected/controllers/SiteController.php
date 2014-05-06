@@ -98,7 +98,7 @@ class SiteController extends Controller {
      * Logs out the current user and redirect to homepage.
      */
     public function actionLogout() {
-        // Aqui tenho que deslogar do facebook, caso tenho feito o login pelo facebook.
+        // Aqui tenho que deslogar do facebook, caso tenha feito o login pelo facebook.
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
